@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mayank Kulkarni | Portfolio | Projecs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/navigation.css">
+<link rel="icon" href="images/icon.png">
+<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+<style>
+
+
+	
+body, html {
+    height: 100%;
+        font:<size>px/em/cm;
+        font-family: 'Archivo';
+
+}
+
+.about{
+
+	
+background-image: url('images/android2.jpg');
+height: 800px;
+	
+font-family: 'Archivo';
+    
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('images/my_image.jpg');
+     
+      font-size: 2.2vw;
+        color: white;
+font-family: 'Archivo';
+
+    /* Full height */
+    height: 100%; 
+     
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills {
+    /* The image used */
+    background-image: url('images/skills.jpg');
+     
+font-family: 'Archivo';
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile{
+
+
+	border-radius: 50%;
+}
+.content{
+
+	        font-size: 2.2vw;
+	        color: white;
+font-family: 'Catamaran';
+    border: 2px solid white;
+    padding: 25px;
+    margin:25px;
+}
+
+.heading {
+font-family: 'Archivo';
+  font-size: 4vw;
+  color: white;
+
+}
+
+.data1{
+            top: 25%;
+			margin: 0 auto;
+			position: relative;
+			font-family: 'Archivo';
+}
+</style>
+</head>
+<body>
+
+	<div class="topnav" id="myTopnav">
+  <a href="https://drive.google.com/open?id=1cjROHDBFdeygHJN8zM9i3w9ySjLsRd0O">Resume</a>
+  <a href="#myprojects">Projects</a>
+  <a href="#myskills">Skills</a>
+  <a href="#aboutme">About</a>
+  <a href="#home" class="active">Home</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+<div class="parallax1" id="home">
+
+		<div class="data1">
+
+		<center><img class="profile" src="images/profile_pic.jpg" height="13%" width="13%" border-radius: 50%;></center>
+		<center><div class="heading">MAYANK KULKARNI</div></center>
+		<center>--------------------------------------------------------------</center>
+		<center>PROGRAMMER | DEVELOPER | OPEN SOURCE ENTHUSIAST</center>
+</div>
+</div>
+
+<div class="about" id="aboutme">
+
+
+<center><div class="heading"> ABOUT ME </div><hr></center>
+<div class="content">
+			Hello Everyone I am Mayank Kulkarni and currently pursuing
+			Bachelor of Engineering at Shri Vaishnav Institute of Technology and Science, Indore(M.P.) from Automobile branch(VI sem) .What I think is that someones ability to code and develope cannot be defined by his/her branch. And branch cannot be the barrier if you have knowledge to get what you want.I love to code and develop Android apps and other than that I love to learn about new technologies and work on them. 
+	</div>
+</div>
+
+<div class="skills" id="myskills">
+	
+
+</div>
+
+</body>
+</html>
