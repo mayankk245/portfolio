@@ -28,6 +28,16 @@ body {margin:0;}
 .topnav .icon {
   display: none;
 }
+.topnav .icon1 {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
