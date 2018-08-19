@@ -120,22 +120,34 @@ font-family: 'Archivo';
 }
 .projects{
 
-   background-image: url('images/lightbulb.png');
+   background-image: url('p.jpg');
      
 font-family: 'Archivo';
 
         color: white;
     /* Full height */
-    height: 800px; 
+    height: auto; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.p{
+	overflow: auto;
+	align-items: center;
+	position: relative;
+	padding: 2vw;
+
+}
+
 .p1{
   width: 30vw;
-  float: left;
+  height: 25vw;
+  float:left ;
+  	position: relative;
+
 margin: 3px;
 padding: 6px;
   border: 2px solid white;
@@ -145,8 +157,10 @@ font-family: 'Catamaran';
 }
 .p2{
   width: 30vw;
-
+height: 25vw;
   float: right;
+  	position: relative;
+
   margin: 3px;
   padding: 6px;
   border: 2px solid white;
@@ -156,11 +170,13 @@ font-family: 'Catamaran';
 }
 .p3{
   width: 30vw;
-  float: center;
-  margin: 5px;
+height: 25vw;
+  margin: 3px;
+float: left;
+	position: relative;
 
+  padding: 6px;
   border: 2px solid white;
-    padding: 15px;
               font-size: 1.5vw;
           color: white;
 font-family: 'Catamaran';
@@ -181,6 +197,48 @@ font-family: 'Catamaran';
 
   padding: -2px;
 }
+
+/* flipping the card
+
+.card-container {
+  cursor: pointer;
+  perspective: 600;
+  margin: 6px;
+padding: 6px;
+  position: relative;
+  width: 30vw;
+}
+.card {
+  position: absolute;
+  transform-style: preserve-3d;
+
+  transition: all 1s ease-in-out;
+  
+  width: 30vw;
+}
+.card:hover {
+  transform: rotateY(-180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+   
+  width: 30vw;
+}
+.card .back {
+  background: black;
+  color: white;
+  float: left;
+  margin:3px;
+    width: 30vw;
+	height: 25vw;
+  border: 2px solid white;
+              font-size: 1.5vw;
+          color: white;
+  transform: rotateY(-180deg);
+}
+*/
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -260,7 +318,7 @@ function myFunction() {
 <center><div class="heading"> ABOUT ME </div><hr></center>
 <div class="content">
 			Hello Everyone, I am Mayank Kulkarni and currently pursuing
-			Bachelor of Engineering at Shri Vaishnav Institute of Technology and Science, Indore(M.P.) from Automobile branch(VII sem) .What I think is that someones ability to code and develope cannot be defined by his/her branch.I love to coding and developing Android applications as well as to solve the problems related to the programming. and other than that I love to learn about new technologies and work on them.<br>
+			Bachelor of Engineering at Shri Vaishnav Institute of Technology and Science, Indore(M.P.) from Automobile branch(VII sem) .What I think is that someones ability to code and develop cannot be defined by his/her branch.I love to code and develop Android applications as well as to solve the problems related to the programming. and other than that I love to learn about new technologies and work on them.<br>
 			<p>And the another thing that I love to do is "Photography" . This is the thing that attract me the most because I love to capture the beauty around us and share it with peoples.</p>
 	</div>
 
@@ -295,28 +353,53 @@ function myFunction() {
 
 
 <div class="projects" id="myprojects">
-<br>
-
-<br>
-<br>
-<br>
-
-  <div class="p1">
-<center>LEARN JAVA</center>
+<center><div class="heading"> PROJECTS </div></center>
 <hr>
 
-  It is a cross-platform app made with the use of
-PhoneGap for android and windows platform.
-It is a Java Tutorial app build to provide detailed
-content to make learning easy even for a begineer.
-Working to add more "topics" , "video Lectures" and
-"Quiz"
+
+
+<div class="p">
+<div class="p1">
+<center>CHAT APP</center>
+<hr>
+The project is based on Android and Firebase.
+This is basically a chat app for the "Superhero fans" 
+where they can unite and discuss the about movies and superheros they like and 
+can also share the media.And here we didnt discriminate between the universe. 
+
 <br>
-<a href="https://drive.google.com/file/d/1Z0M-gk0c8GUtkIWJO7xnz8z1JWlScnVR/view" style="text-decoration:none;"><center><div class="d1">Download</div></center></a>
+<a href="https://drive.google.com/file/d/1E_eJIKR5FiVR3WHGqU3CiW2pk0MGZQRC/view" style="text-decoration:none;"><center><div class="d1">Download</div></center></a>
 
 
   </div>
 <div class="p2">
+<center>PORTFOLIO</center>
+<hr>
+This website has been made by the use of basic html,Css and js.
+where you can have all the informaion about my skills , my projects and ways to contact
+me.This is the simple idea to provide all my technical skills and information about me .
+And that looks cool too.
+
+<br>
+
+
+
+  </div>
+  <div class="p2">
+<center>XYLOPHONE</center>
+<hr>
+
+This is an Android based project.
+which can be used to entertain kids or sometimes for fun also.
+This app consist of seven diffrent keys, which on perssing them produce diffrent
+frequency sound. Sometimes can also be used to relieve the stress.  
+<br>
+<a href="https://drive.google.com/open?id=1DEtl3r5-6UcfzIyVSmUZDkRVvUxRBY0K" style="text-decoration:none;"><center><div class="d1">Download</div></center></a>
+
+
+  </div>
+
+<div class="p1">
   <center>Auto-Braking</center>
 <hr>
   It is the small model of auto-braking made by the use
@@ -328,8 +411,39 @@ stops.
 We can use this concept in electric brakes and
 clutches
 <br>
-<center><a href="https://drive.google.com/file/d/1s5exUHEBtbEH1zq0H9SQUOq4DKq--Nud/view?usp=sharing" style="text-decoration:none;"><center><div class="d1">Watch Video</div></a></center>
+<center><a href="https://drive.google.com/file/d/1s5exUHEBtbEH1zq0H9SQUOq4DKq--Nud/view?usp=sharing" style="text-decoration:none;"><center><div class="d1">Watch Video</div></a></center></div>
 
+<div class="card-container">
+  <div class="card">
+  <div class="p3">
+<center>DICE</center>
+<hr>
+
+This is another basic android project dice.
+A dice is among one of things which hides itself when required.
+So just install the app and that will work for you as dice and continue playing your game.
+<br>
+<a href="https://drive.google.com/open?id=12sT7-eddw4g8lKrGHovfBG-6CoeJ0ue2" style="text-decoration:none;"><center><div class="d1">Download</div></center></a>
+
+
+  </div>
+  <div class="side back"></div>
+  </div>
+</div>
+
+
+<div class="p2">
+  <center>LEARN JAVA</center>
+<hr>
+  It is a cross-platform app made with the use of
+PhoneGap for android and windows platform.
+It is a Java Tutorial app build to provide detailed
+content to make learning easy even for a begineer.
+Working to add more "topics" , "video Lectures" and
+"Quiz"
+<br>
+<center><a href="https://drive.google.com/open?id=1Z0M-gk0c8GUtkIWJO7xnz8z1JWlScnVR" style="text-decoration:none;"><center><div class="d1">Download</div></a></center></div>
+    
 </div>
 <br>
 <br>
@@ -348,17 +462,6 @@ clutches
 <br>
 <br>
 <br>
-   <center><div class="p3">
-<center>More Projects to come...</center>
-
-
-
-  </div></center>
-	
-
-	</div>
-
-
 
 
 
